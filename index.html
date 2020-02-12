@@ -9,19 +9,18 @@
 
     <style>
       .box {
-        background-color: yellow;
+        color: white;
+        background-color: blue;
+        transition: background-color 0.5s ease-in-out;
       }
-      .inside-box {
-        background-color: green;
+      .box:hover {
+        background-color: red;
+        color: green;
       }
     </style>
   </head>
 
   <body>
-    <h1>Title</h1>
-    <p>What the ?</p>
-    <a href="contact.me.html" target="blank">fake link </a>
-    <div class="box"></div>
-    <div class="inside-box"></div>
+    <span class="box">LA</span>
   </body>
 </html>
