@@ -8,18 +8,26 @@
     <link href="styles.css" rel="stylesheet" />
 
     <style>
-      body {
-        background-color: green;
+      .box {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        animation: 1.5s rotation infinite ease-in-out;
       }
-      @media screen and (min-width: 320px) and (max-width: 640px) {
-        body {
-          background-color: blue;
+
+      @keyframes rotation {
+        from {
+          transform: none;
+        }
+        to {
+          transform: translateX(10px) rotate(10deg) translateY(5px);
         }
       }
+      
     </style>
   </head>
 
   <body>
-    <div class="box">1111</div>
+    <div class="box"></div>
   </body>
 </html>
